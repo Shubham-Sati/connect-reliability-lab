@@ -254,9 +254,9 @@ go mod init github.com/debaraj/connect-reliability-lab
 ```
 
 **Checkpoint**
-- [ ] Docker shows ≥ 12 GB memory
-- [ ] `kind version` works
-- [ ] You know why every course `kubectl` command uses `--context kind-lab`
+- [x] Docker shows ≥ 12 GB memory
+- [x] `kind version` works
+- [x] You know why every course `kubectl` command uses `--context kind-lab`
 
 ---
 
@@ -1893,7 +1893,7 @@ kind load docker-image lab-connect:local --name lab
 
 | Phase | Title | Est. | Status | Finished |
 |---|---|---|---|---|
-| 0 | Environment & tooling | 1h | ☐ | |
+| 0 | Environment & tooling | 1h | ☑ | 2026-11-16 |
 | 1 | The big picture + pipeline by hand | 3h | ☐ | |
 | 2 | Postgres WAL, slots, publications | 3h | ☐ | |
 | 3 | Kafka basics | 3h | ☐ | |

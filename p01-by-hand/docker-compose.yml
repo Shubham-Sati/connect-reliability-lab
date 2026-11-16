@@ -1,0 +1,11 @@
+name: p01
+services:
+  source-db:
+    image: postgres:17-alpine
+    environment: { POSTGRES_USER: app, POSTGRES_PASSWORD: app, POSTGRES_DB: shop }
+    command: ["postgres", "-c", "wal_level=logical"]
+  kafka:
+    image: apache/kafka:4.1.1        # no settings = one broker on localhost:9092 inside the container
+  clickhouse:
+    image: clickhouse/clickhouse-server:26.8
+    environment: { CLICKHOUSE_USER: lab, CLICKHOUSE_PASSWORD: lab, CLICKHOUSE_DB: shop, CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: "1" }
