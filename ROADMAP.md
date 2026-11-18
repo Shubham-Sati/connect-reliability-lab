@@ -384,11 +384,11 @@ ch "SELECT * FROM orders FINAL"      # → 42  paid  2
 Clean up: `docker compose down -v`.
 
 **Checkpoint**
-- [x] You can draw the path of one UPDATE from Postgres to ClickHouse
-- [x] You can say why "Connect down for 10 minutes" is downtime but not data loss
-- [x] You can name 2 ways data *could* actually be lost
-- [x] You can explain why duplicates are safe in our design
-- [x] You carried one row from Postgres to ClickHouse by hand and can say which component replaces each step
+- [ ] You can draw the path of one UPDATE from Postgres to ClickHouse
+- [ ] You can say why "Connect down for 10 minutes" is downtime but not data loss
+- [ ] You can name 2 ways data *could* actually be lost
+- [ ] You can explain why duplicates are safe in our design
+- [ ] You carried one row from Postgres to ClickHouse by hand and can say which component replaces each step
 
 ---
 
@@ -1894,7 +1894,7 @@ kind load docker-image lab-connect:local --name lab
 | Phase | Title | Est. | Status | Finished |
 |---|---|---|---|---|
 | 0 | Environment & tooling | 1h | ☑ | 2026-11-16 |
-| 1 | The big picture + pipeline by hand | 3h | ☑ | 2026-11-18 |
+| 1 | The big picture + pipeline by hand | 3h | ☐ | |
 | 2 | Postgres WAL, slots, publications | 3h | ☐ | |
 | 3 | Kafka basics | 3h | ☐ | |
 | 4 | Kafka durability | 4h | ☐ | |
